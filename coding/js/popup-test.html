@@ -15,9 +15,15 @@ function myFunction2() {
 
 <script>
 function meToo() {
+  window.confirm("Press a button!");
+  
   if (confirm("Press a button!")) {
-  txt = "You pressed OK!";
+  document.getElementById("result").innerHTML = "You pressed OK!";
 } else {
-  txt = "You pressed Cancel!";
+  document.getElementById("result").innerHTML = "You pressed Cancel!";
+}
+  alert("Check your result!");
 }
 </script>
+
+<p id="result"></p>
