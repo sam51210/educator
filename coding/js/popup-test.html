@@ -1,5 +1,6 @@
 <button onclick="setTimeout(myFunction, 3000)">Click me and wait 3 seconds</button>
 <button onclick="setTimeout(myFunction2, 1)">Click me!</button>
+<button onclick="setTimeout(meToo, 1)">Me too!</button>
 
 <script>
 function myFunction() {
@@ -9,5 +10,14 @@ function myFunction() {
 <script>
 function myFunction2() {
   window.confirm("Hi there!");
+}
+</script>
+
+<script>
+function meToo() {
+  if (confirm("Press a button!")) {
+  txt = "You pressed OK!";
+} else {
+  txt = "You pressed Cancel!";
 }
 </script>
